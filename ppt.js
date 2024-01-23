@@ -1,5 +1,5 @@
 const emp_str=""
-playRound(emp_str);
+// playRound(emp_str);
 function playRound(x){
     //player chooses
     const playerSelection = prompt("Write your choice (rock, papers or scissors");

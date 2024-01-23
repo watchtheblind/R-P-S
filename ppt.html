@@ -3,10 +3,54 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Rock, Papers, Scissors</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div id="container">
+            <h1>Welcome to 'Rock, Papers, Scissors!'</h1>
+            <h2>To play, make a choice below!</h2>
+            <div id="choices">
+                <div class="frame">
+                    <div class="choice rock">
+                        <img src="images/rock.png" alt="A rock pixel art">
+                    </div>
+                    <span>
+                        <button value="Rock">Rock</button>
+                    </span>
+                </div>
+                <div class="frame">
+                    <div class="choice papers">
+                        <img src="images/paper.png" alt="A toilet paper pixel art">
+                    </div>
+                    <span>
+                        <button value="Papers">Papers</button>
+                    </span>
+      
+                </div>
+                <div class="frame">
+                    <div class="choice scissors">
+                        <img src="images/scissors.png" alt="A scissors pixel art">
+                    </div>
+                    <span>
+                        <button>Scissors</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="results">
+            <div>
+                <span id="playerScore">
+                    Player's score: 0
+                </span>
+                <span id="computerScore">
+                    Computer's score: 0
+                </span>
+            </div>
+        </div>
     <script src="ppt.js"></script>
     </body>
 </html>

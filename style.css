@@ -1,0 +1,50 @@
+body{
+    font-family: 'DotGothic16', sans-serif;
+}
+h1,h2,p{
+    text-align: center;
+}
+#choices{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-style: dashed;
+}
+.frame{
+    border-style: dotted;
+    width: 32%;
+    padding-top: 2%;
+}
+.choice {
+    border: .14cm;
+    border-style: solid;
+}
+img{
+    width: 100%;
+}
+.papers img{
+    padding-left: 1%;
+}
+.scissors img{
+    padding-left: 1%;
+}
+button{
+    width: 200%;
+    font-family: 'DotGothic16', sans-serif;
+    border-radius: 10px;
+    font-size: 4vh;
+    margin: 0 auto;
+}
+.frame span{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+  }
+.choicetext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
