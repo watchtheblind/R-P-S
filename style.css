@@ -1,50 +1,73 @@
 body{
     font-family: 'DotGothic16', sans-serif;
+    background-color: #ffeeee;
 }
 h1,h2,p{
     text-align: center;
+    font-size: 5vh;
 }
 #choices{
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border-style: dashed;
+    padding: 2%;
+    margin-bottom: 4%;
 }
 .frame{
-    border-style: dotted;
     width: 32%;
-    padding-top: 2%;
+    padding-left: .5%;
 }
 .choice {
-    border: .14cm;
+    border: .5vw;
     border-style: solid;
+    border-radius: 5%;
 }
 img{
-    width: 100%;
+    width: 90%;
 }
 .papers img{
-    padding-left: 1%;
+    padding-left: 6%;
 }
 .scissors img{
-    padding-left: 1%;
+    padding-left: 2%;
+}
+.choice.rock{
+    background-color: #eeffee;
+}
+.choice.papers{
+    background-color: #eef1ff;
+}
+.choice.scissors{
+    background-color: #fff5ee;
 }
 button{
-    width: 200%;
+    width: 21vw;
     font-family: 'DotGothic16', sans-serif;
-    border-radius: 10px;
-    font-size: 4vh;
-    margin: 0 auto;
+    border-radius: 3%;
+    font-size: 4vw;
+    margin-top: 5%;
+    background-color: #afafaf;
 }
 .frame span{
-        position: relative;
-        display: inline-block;
-        text-align: center;
-  }
-.choicetext{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+table{
+    margin: 0 auto;
+    font-size: 3vh;
+    width: 60vw;
+}
+table th, td{
+    border-width: 2px;
+    border-style: solid;
+    margin: 0 auto;
+    background-color: #afafaf;
+}
+#finalresult{
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
 }

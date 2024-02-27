@@ -1,8 +1,12 @@
-const emp_str=""
-// playRound(emp_str);
+/* queryselector para cada botón */
+document.querySelector('button[value="rock"]').addEventListener("click", playRound("rock"));
+document.querySelector('button[value="papers"]').addEventListener("click", playRound("papers"));
+document.querySelector('button[value="scissors"]').addEventListener("click", playRound("scissors"));
+const div = document.createElement('div');
+
 function playRound(x){
     //player chooses
-    const playerSelection = prompt("Write your choice (rock, papers or scissors");
+    const playerSelection = x;
     //so do computer
     const choice = ['rock','papers','scissors'];
     const randomIndex = Math.floor(Math.random() * choice.length);
@@ -11,23 +15,27 @@ function playRound(x){
         case (playerSelection=='rock' && computerSelection =='scissors'):
         case (playerSelection=='scissors' && computerSelection =='papers'):
         case (playerSelection=='papers' && computerSelection =='rock'):
-           const text = document.getElementById("item");
-           x= (text.textContent="Player wins!");
-           return x;
-            break;
+           let texto = document.createTextNode("Player wins!");
+           div.appendChild(texto);
+           return  document.body.appendChild(div);
+           break;
         case (playerSelection==computerSelection):
-            x="Draw game!";
-            return x;
+            texto = document.createTextNode("Draw game!");
+            div.appendChild(texto);
+            return document.body.appendChild(div);
             break;
         case (playerSelection=='papers' && computerSelection =='scissors'):
         case (playerSelection=='rock' && computerSelection =='papers'):
         case (playerSelection=='scissors' && computerSelection =='rock'):
-            x="You lose!";
-            return x;
+            texto = document.createTextNode("you lose!");
+            div.appendChild(texto);
+            return document.body.appendChild(div);
             break;
         default:
-            x="Error!";
-            return x;
+            texto = document.createTextNode("error!");
+            div.appendChild(texto);
+            return document.body.appendChild(div);
+            break;
         }
 }
 // function Game(emp_str){
